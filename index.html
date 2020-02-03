@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>graVITas'19</title>
+    <meta name="author" content="Sarthak Dandotiya & Rajvardhan Deshmukh" />
+    <meta
+      name="description"
+      content="graVITas is an international fest organized by VIT University, Vellore."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/brands.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="icon" href="./img/landing/icon.png" />
+
+    <!-- =====================LANDING SECTION CSS============================================== -->
+    <link rel="stylesheet" media="screen" href="css/style1.css" />
+    <link rel="stylesheet" href="css/main1.css" />
+    <!-- ======================EVENTS SECTION======================================================== -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <style>
+      .dropdown-content {
+        background: #555555 !important;
+      }
+      .dropdown-content a {
+        color: white !important;
+      }
+      .dropdown-content a:hover {
+        background: #333 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./js/jquery.js"></script>
+    <div id="cover"><img src="./img/grav-pre.gif" alt="gif" width="50%" /></div>
+    <script>
+      $(window).on("load", function() {
+        $("#cover").fadeOut(200);
+      });
+    </script>
+    <div class="container-fluid">
+      <!-- NAVIGATION BAR -->
+      <nav id="navbar">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"
+            ><img
+              src="./img/gravitas-final-white.png"
+              alt="Logo"
+              class="nav-logo"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="underline right hide-on-med-and-down">
+            <li><a class="scroll" href="#landing">HOME</a></li>
+            <li><a class="scroll" href="#about">ABOUT</a></li>
+            <li><a class="scroll" href="#events">EVENTS</a></li>
+            <li><a class="scroll" href="#tns">TEAM</a></li>
+            <li><a class="scroll" href="#tns">SPONSORS</a></li>
+            <li>
+              <a class="dropdown-trigger " data-target="dropdown1"
+                >CONFERENCE</a
+              >
+            </li>
+
+            <li><a href="accommodation.html">ACCOMMODATION</a></li>
+          </ul>
+          <ul id="dropdown1" class="dropdown-content">
+            <li>
+              <a href="http://info.vit.ac.in/INEST/conference/index.html"
+                >VISIT</a
+              >
+            </li>
+            <li>
+              <a href="http://info.vit.ac.in/gravitas2019/gravitas_login.asp"
+                >REGISTER</a
+              >
+            </li>
+          </ul>
+          <ul id="dropdown2" class="dropdown-content">
+            <li>
+              <a href="http://info.vit.ac.in/INEST/conference/index.html"
+                >VISIT</a
+              >
+            </li>
+            <li>
+              <a href="http://info.vit.ac.in/gravitas2019/gravitas_login.asp"
+                >REGISTER</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="scroll x" href="#landing">HOME</a></li>
+        <li><a class="scroll x" href="#about">ABOUT</a></li>
+        <li><a class="scroll x" href="#events">EVENTS</a></li>
+        <li><a class="scroll x" href="#tns">TEAM</a></li>
+        <li><a class="scroll x" href="#tns">SPONSORS</a></li>
+        <li>
+          <a class="dropdown-trigger2" data-target="dropdown2">CONFERENCE</a>
+        </li>
+
+        <li><a href="accommodation.html">ACCOMMODATION</a></li>
+      </ul>
+
+      <!-- LANDING -->
+      <section id="landing">
+        <div id="particles-js">
+          <!-- <div class="vitlogo">
+            <img src="img/VITLogo.png" />
+          </div> -->
+          <!-- <canvas id="canvasgl"></canvas> -->
+
+          <div class="info">
+            <img
+              src="./img/gravitas-final.png"
+              alt="graVITas"
+              id="landing-logo"
+            />
+            <h6>
+              October 11,12 & 13
+            </h6>
+
+            <br />
+
+            <h2 id="tdt">
+              Technology<br />
+              Driven<br />
+              Transformation
+            </h2>
+            <br />
+            <div>&nbsp;</div>
+            <a href="#about" class="mybtn scroll">START</a>
+          </div>
+
+          <img src="./img/vit_white.png" alt="logo" id="vit-landing-logo" />
+
+          <div class="powered-by">
+            <p style="color: white">Powered by:</p>
+            <div class="pb-container">
+              <img src="./img/sponsors/val.png" alt="powered-by" />
+              <img
+                src="./img/sponsors/autodeskw.png"
+                alt="powered-by"
+                id="pb2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <header id="header">
+          <div class="menu-wrapper">
+            <picture class="Menu-button" id="y-menu-button">
+              <!-- <source srcset=./static/menu.svg> <img srcset=./static/menu.png
+              width=45px alt="Open menu" hidden> -->
+            </picture>
+          </div>
+        </header>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="row">
+          <div class="col l7 m12 push-l5">
+            <h4>ABOUT VIT</h4>
+            <p>
+              Vellore Institute of Technology (VIT) is driven by a collective
+              purpose: to improve life by applying knowledge and to develop a
+              better world through education, research, and innovation. VIT has
+              students from all the 29 states of India and more than 41
+              countries, because of its academic excellence. The curriculum is
+              designed to enable students to think innovatively through applied
+              learning practices.  Fully Flexible Credit System (FFCS), Project
+              Based Learning (PBL), fully digitized academic portals and
+              Hackathons / Makeathons assist students in equipping themselves
+              for 2020 job skills and kindle their interest and curiosity,
+              thereby moulding them to be better problem solvers. VIT ensures
+              that the Teaching-Learning process of the 8th module in every
+              subject is handled by industry experts, wherein students
+              contextualize the concepts in the classroom environment. The
+              national and international clubs, chapters at VIT provide arenas
+              to the students to think out of the box and excel in co-curricular
+              and extra-curricular activities. VIT has strong tie-ups with
+              Industries and Universities of national and international repute.
+              <!-- These MoUs provide students greater opportunities to actively engage in research and to enthusiastically pursue higher education in their fields of interest. -->
+              These MoUs provide students greater opportunities to pursue higher
+              education in their fields of interest.
+
+              <br />
+              <br />
+
+              <!-- <h4>ABOUT GRAVITAS</h4>
+              <p>
+                  This year graVITas is going to hone the technological skills of
+                  the students and researchers with innovative events in every
+                  avenue of engineering coupled with Workshops, Seminars and
+                  an International Conference with specific theme. This year
+                  extravaganza goes with a theme “Technology Driven Transformation”.
+                  The primary objective of this year carnival is to address the
+                  feasibility of providing solutions which can simplify the lives of
+                  common people with the use of NANO in engineering, science and
+                  technology.
+              </p> -->
+            </p>
+          </div>
+          <div class="col l5 m12 pull-l7 about-img-container">
+            <img src="./img/about.png" alt="image" class="about-img" />
+          </div>
+
+          <div class="col s12 about-gravitas">
+            <h4>ABOUT graVITas</h4>
+            <p>
+              The infrastructural facilities along with a congenial atmosphere
+              for learning enable all our students to excel in curricular and
+              co-curricular activities. VIT has always been at the forefront and
+              achieved several accolades across the globe and our journey,
+              indeed, is long. VIT is aware that technological developments
+              remarkably contribute to societal transformation. This is
+              manifested during our annual techno-management fest “graVITas’.
+              ‘graVITas’ 19 provides opportunities to ignite and innovate the
+              young minds to demonstrate their technical skills. The theme of
+              graVITas 2019 is “Technology Driven Transformation” which intends
+              to offer simple and novel solutions to the challenges faced by the
+              common people.
+              <br />
+              There are a plethora of events in graVITas'19 covering almost
+              every domain in emerging areas. To name a few, VIT-Model United
+              Nations (VIT-MUN), The Rover Challenge, Drone League, Business
+              idea competition, Social Transformers will emphasize the ethical
+              and technological skills of the students. Also, the technical
+              workshops and hands-on training sessions, VIT HACK [comprising of
+              Make-a-Thon, Hack-a-Thon, Idea-a-Thon, Design-a-Thon, Chem-a-Thon]
+              will technically entertain and enrich the students’ innovative
+              skills. In addition to the events, we are hosting an International
+              Conference on “Nano in Engineering, Science, and Technology
+              (iNEST) and the accepted papers in the conference will be
+              published in the form of proceedings/book chapters. We assure that
+              this year’s technical extravaganza is certain to grab the
+              attention of techno buffs and will provide a platform to showcase
+              their academic excellence. All the engineering and science
+              students of VIT and other institutes are expected to participate
+              in this event.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section id="events">
+        <div class="row">
+          <div class="col l6 s12">
+            <div>&nbsp;</div>
+            <h4>EVENTS</h4>
+            <p>
+              "Technology driven transformation"- A theme chosen to show how
+              diverse the applications of technology can be in our lives. The
+              possibilities are limitless. And to make sure that you get an
+              personalised insight of this, we present to you a rich assortment
+              of events to be a part of. These events will present you a
+              platform to do what you want, be it to learn something new, or
+              present your skills and hold the audience spellbound, or to have a
+              day full of fun with you friends.
+            </p>
+            <a href="#" class="cta trigger all">ALL EVENTS</a>
+
+            <div>&nbsp;</div>
+          </div>
+          <div class="col l6 s12">
+            <!-- <div>&nbsp;</div> -->
+            <!-- <div>&nbsp;</div> -->
+
+            <div class="wrap">
+              <div class="cheating">
+                <div id="showcase" class="noselect">
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      &nbsp;&nbsp;<img
+                        src="img/event_categories/premium-badge.png"
+                      />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button class="btn trigger">Premier</button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/training.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button class="btn trigger">
+                      Workshops
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/web-settings.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button class="btn trigger">
+                      Technical
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/premium-badge.png" />
+                    </div>
+
+                    <div>&nbsp;</div>
+                    <button class="btn trigger">
+                      Non-Technical
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/training.png" />
+                    </div>
+
+                    <div>&nbsp;</div>
+                    <a href="https://vithack.hackerearth.com/">
+                      <button class="btn">
+                        VITHACK
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l6 left_col">
+                    <button class="navbutton noselect left">
+                      &lt;
+                    </button>
+                  </div>
+                  <div class="col l6 right_col">
+                    <button class="navbutton noselect right">
+                      &gt;
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- <div>&nbsp;</div>
+  
+                <div>&nbsp;</div> -->
+            </div>
+            <!-- end of wrap -->
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM & SPONSORS -->
+      <section id="tns">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4>OUR TEAM</h4>
+            <p>
+              graVITas is an experience, full of amusement and learning. But
+              creating this fascinating experience is no easy task. So here it
+              is, an assemblage of extraordinary students and remarkable
+              teachers, hand-picked by the organizing team, under the guidance
+              of our Chancellor, Dr. G. Viswanathan, who went all out to define
+              this experience to the best of their capabilities and define
+              Asia's one of the biggest technical extravaganza.
+            </p>
+            <a href="team.html" class="cta">MEET THE TEAM</a>
+          </div>
+          <div class="col l6 s12">
+            <h4>SPONSORS</h4>
+            <p>
+              Vellore Institute of Technology has always strived towards
+              ensuring the technical development of the society. graVITas,
+              Asia's one of the largest technical fest, is one such initiative
+              towards fulfilling this responsibility. And in this journey
+              towards our goal, we have never been alone. Here are the many
+              others, who share the same vision of a better future, and
+              empowered us to make sure we present to the best that you deserve.
+            </p>
+            <a href="sponsors.html" class="cta">MORE...</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TSHIRT -->
+      <section id="events">
+        <div class="row">
+          <h4>T - SHIRTS</h4>
+          <br /><br />
+          <div class="col l6 s12 tshirt-img-container">
+            <img src="img/Tshirt1.png" /><br />
+            <p>Round Neck - &#8377; 225</p>
+          </div>
+          <div class="col l6 s12 tshirt-img-container">
+            <img src="img/Tshirt2.png" /><br />
+            <p>Collar Neck - &#8377; 275</p>
+          </div>
+          <div>&nbsp;</div>
+          <a
+            href="http://info.vit.ac.in/gravitas2019/gravitas_login.asp"
+            class="cta"
+            >BUY NOW</a
+          >
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <!-- <div class="img-slide">
+          <img src="./img/g1.jpeg" alt="image" />
+          <img src="./img/g2.jpeg" alt="image" />
+          <img src="./img/g3.jpeg" alt="image" />
+          <img src="./img/g4.jpeg" alt="image" />
+          <img src="./img/g5.jpeg" alt="image" />
+          <img src="./img/g6.jpeg" alt="image" />
+        </div> -->
+        <!-- BANNER -->
+        <!-- <img src="./img/banner.png" alt="gravitas_image" class="banner" /> -->
+        <div class="gallery-cta">
+          <a href="gallery.html" class="cta cta2">GALLERY</a>
+        </div>
+        <div>&nbsp;</div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <img src="./img/vit_white.png" alt="vit_logo" class="vit-logo" />
+
+        <div id="contact">
+          <div class="location">
+            <img src="./img/baseline-location_on-24px.svg" alt="location" />
+            <p>Vellore Institute of Technology Vellore, Tamil Nadu-632014</p>
+          </div>
+          <div class="mail">
+            <img src="./img/baseline-email-24px.svg" alt="email" />
+            <p>organizingteam.gravitas@vit.ac.in</p>
+          </div>
+          <p>
+            Developed with <i class="fab fa-gratipay"></i> by Web & Media
+            Team
+          </p>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/Gravitas.VITvellore/"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.instagram.com/vitgravitas/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <!-- <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="./js/materialize.min.js"></script>
+    <!-- <script src="./js/slick.min.js"></script> -->
+    <script src="./js/main.js"></script>
+    <!-- =============================LANDING SECTION SCRIPTS ================================== -->
+    <!-- <script src="js/twgl.min.js"></script>
+    <script src="js/shadersLogo.js"></script>
+    <script src="js/shadersStars.js"></script>
+    <script type="text/javascript" src="js/main1.js"></script> -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/index.js"></script>
+    <!-- ===============================EVENTS SECTION SCRIPTS================================== -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.cloud9carousel.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script>
+      $(".trigger").click(function() {
+        // console.log($(this).text());
+        console.log("click");
+        if (
+          $(this)
+            .text()
+            .trim() == "ALL EVENTS"
+        ) {
+          localStorage.setItem("storageName", "all");
+          window.location.href = "events.html";
+        }
+        if (
+          $(this)
+            .text()
+            .trim() == "Premier"
+        ) {
+          console.log("in");
+          localStorage.setItem("storageName", "premium");
+          window.location.href = "events.html";
+        }
+        if (
+          $(this)
+            .text()
+            .trim() == "Technical"
+        ) {
+          localStorage.setItem("storageName", "technical");
+          window.location.href = "events.html";
+        }
+        if (
+          $(this)
+            .text()
+            .trim() == "Non-Technical"
+        ) {
+          localStorage.setItem("storageName", "non-technical");
+          window.location.href = "events.html";
+        }
+        if (
+          $(this)
+            .text()
+            .trim() == "Workshops"
+        ) {
+          localStorage.setItem("storageName", "workshops");
+          window.location.href = "events.html";
+        }
+        if (
+          $(this)
+            .text()
+            .trim() == "VITHACK"
+        ) {
+          localStorage.setItem("storageName", "megathon");
+          window.location.href = "events.html";
+        }
+      });
+    </script>
+    <script>
+      $(function() {
+        var showcase = $("#showcase");
+        var container = $(".conntainer");
+        var abc = 100;
+        showcase.Cloud9Carousel({
+          yOrigin: null,
+          xOrigin: null,
+          yRadius: -40,
+          xRadius: abc == 0 ? null : abc,
+          itemClass: "card",
+          buttonLeft: $(".navbutton.left"),
+          buttonRight: $(".navbutton.right"),
+          btn: $(".btn"),
+          bringToFront: true,
+          onLoaded: function() {
+            showcase.css("visibility", "visible");
+            showcase.css("display", "none");
+            showcase.fadeIn(1500);
+          }
+        });
+
+        // Simulate physical button click effect
+        //
+        $(".navbutton").click(function(e) {
+          var b = $(e.target).addClass("down");
+          setTimeout(function() {
+            b.removeClass("down");
+          }, 80);
+        });
+
+        $(document).keydown(function(e) {
+          //
+          // More codes: http://www.javascripter.net/faq/keycodes.htm
+          //
+          switch (e.keyCode) {
+            /* left arrow */
+            case 37:
+              $(".navbutton.left").click();
+              break;
+
+            /* right arrow */
+            case 39:
+              $(".navbutton.right").click();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>graVITas'19</title>
+    <meta name="author" content="Sarthak Dandotiya & Rajvardhan Deshmukh" />
+    <meta
+      name="description"
+      content="graVITas is an international fest organized by VIT University, Vellore."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/brands.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="icon" href="./img/landing/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- ======================EVENTS SECTION======================================================== -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+    <link rel="stylesheet" href="./css/events.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <style>
+      .card-img img {
+        height: 100px !important;
+        width: 100% !important;
+      }
+
+      .dropdown-content {
+        background: #555555 !important;
+      }
+      .dropdown-content a {
+        color: white !important;
+      }
+      .dropdown-content a:hover {
+        background: #333 !important;
+      }
+    </style>
+  </head>
+
+  <body ng-app="myApp" ng-controller="eventCtrl" class="doodle-back">
+      <script src="./js/jquery.js"></script>
+      <div id="cover"><img src="./img/grav-pre.gif" alt="gif" width="50%"></div>
+      <script>
+          $(window).on("load", function() {
+              $("#cover").fadeOut(200);
+            });
+      </script>
+    <div class="container-fluid">
+      <!-- NAVIGATION BAR -->
+
+      <!-- NAVIGATION BAR -->
+      <nav id="navbar">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"
+            ><img
+              src="./img/gravitas-final-white.png"
+              alt="Logo"
+              class="nav-logo"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="underline right hide-on-med-and-down">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="sponsors.html">SPONSORS</a></li>
+            <li>
+              <a class="dropdown-trigger " data-target="dropdown1"
+                >CONFERENCE</a
+              >
+            </li>
+
+            <li><a href="accommodation.html">ACCOMMODATION</a></li>
+          </ul>
+          <ul id="dropdown1" class="dropdown-content">
+            <li>
+              <a href="http://info.vit.ac.in/INEST/conference/index.html"
+                >VISIT</a
+              >
+            </li>
+            <li>
+              <a href="http://info.vit.ac.in/gravitas2019/gravitas_login.asp"
+                >REGISTER</a
+              >
+            </li>
+          </ul>
+          <ul id="dropdown2" class="dropdown-content">
+            <li>
+              <a href="http://info.vit.ac.in/INEST/conference/index.html"
+                >VISIT</a
+              >
+            </li>
+            <li>
+              <a href="http://info.vit.ac.in/gravitas2019/gravitas_login.asp"
+                >REGISTER</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="sponsors.html">SPONSORS</a></li>
+        <li>
+          <a class="dropdown-trigger2" data-target="dropdown2">CONFERENCE</a>
+        </li>
+
+        <li><a href="accommodation.html">ACCOMMODATION</a></li>
+      </ul>
+
+      <!-- <header id="header">
+        <a href="./index.html#events" class="back-btn">
+          <img src="./img/arrow-white.png" alt="arrow" class="back-arrow" />
+          Back</a
+        >
+      </header> -->
+
+      <!-- EVENTS -->
+      <section id="events">
+        <div class="row">
+          <!-- ---------------------------------------Event Category-------------------------------------------- -->
+          <div class="event_category col l4 s12">
+            <h4>EVENTS</h4>
+            <div class="wrap">
+              <div class="cheating">
+                <div id="showcase" class="noselect">
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/web-settings.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button class="filter-btn btn all" data-filter=".all">
+                      All
+                    </button>
+                  </div>
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      &nbsp;&nbsp;<img
+                        src="img/event_categories/premium-badge.png"
+                      />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button
+                      class="filter-btn btn premium"
+                      data-filter=".premium"
+                    >
+                      Premier
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/training.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button
+                      class="filter-btn btn workshops"
+                      data-filter=".workshops"
+                    >
+                      Workshops
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/web-settings.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button
+                      class="filter-btn btn technical"
+                      data-filter=".technical"
+                    >
+                      Technical
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      &nbsp;&nbsp;<img
+                        src="img/event_categories/premium-badge.png"
+                      />
+                    </div>
+                    <div>&nbsp;</div>
+                    <button
+                      class="filter-btn btn non-technical"
+                      data-filter=".non-technical"
+                    >
+                      Non-Technical
+                    </button>
+                  </div>
+
+                  <!-- <div class="card">
+                    <div>&nbsp;</div>
+                    <div class="logo">
+                      <img src="img/event_categories/training.png" />
+                    </div>
+                    <div>&nbsp;</div>
+                    <a href="https://vithack.hackerearth.com/"><button
+                      class="filter-btn btn megathon" 
+                    >
+                      VITHACK
+                    </button></a>
+                    
+                  </div> -->
+                </div>
+                <!-- <div class="navbtncontainer center">
+                  <button class="navbutton noselect left">
+                    &lt;
+                  </button>
+                  &nbsp;
+                  <button class="navbutton noselect right">
+                    &gt;
+                  </button>
+                </div> -->
+                <div class="row">
+                  <div class="col l6 left_col">
+                    <button class="navbutton noselect left">
+                      &lt;
+                    </button>
+                  </div>
+                  <div class="col l6 right_col">
+                    <button class="navbutton noselect right">
+                      &gt;
+                    </button>
+                  </div>
+                </div>
+
+                <!-- <div>&nbsp;</div> -->
+
+                <!-- <div>&nbsp;</div> -->
+              </div>
+            </div>
+            <!-- end of wrap -->
+          </div>
+
+          <!-- -----------------------Event Cards------------------------------------------------------ -->
+          <div class="event_cards col l8 s12">
+            <input type="text" id="input" placeholder="Search" />
+
+            <p class="row center loader" ng-show="working">
+              <br /><br />
+              <!-- <img src="img/grav-pre.gif" style="height: 100px;" id="loading" /><br /> -->
+              LOADING..
+            </p>
+
+            <ul class="row allevents" id="mix-wrapper" ng-show="!working">
+              <li
+                class="trigger col l4 s12 mix-target {{ event.category }} all"
+                ng-repeat="event in events | filter:eventSearch | orderBy:'name'"
+                ng-click="show(event._id)"
+                data-iziModal-open="#modal-{{ event._id }} "
+              >
+                <div class="pa-bot flip-box">
+                  <div class="flip-box-inner">
+                    <div class="no-pad flip-box-front">
+                      <div class="no-pad col l4 s4">
+                        <!-- <div
+                          class="card-img"
+                          style="background-position:center;background-size:contain ;background: url({{
+                            event.thumbnailUrl
+                              ? event.thumbnailUrl
+                              : 'img/template.jpg'
+                          }});"
+                        ></div> -->
+                        <!-- <div
+                          class="card-img"
+                          style="background-position:center;background-size:cover ;background: url({{
+                            event.thumbnailUrl
+                          }});"
+                        ></div> -->
+                        <div class="card-img">
+                          <img
+                            src="{{
+                              event.thumbnailUrl
+                                ? event.thumbnailUrl
+                                : 'img/template.jpg'
+                            }}"
+                          />
+                        </div>
+                      </div>
+                      <div class="col l8 s8">
+                        <div class="title">
+                          <b>{{ toTitleCase(event.name) }}</b>
+                        </div>
+                        <!-- <br /> -->
+                        <p class="org">
+                          {{ event.organization.join(", ").toUpperCase() }}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flip-box-back">
+                      &nbsp;&nbsp;
+                      <span ng-if="event.category.toUpperCase()!='PREMIUM'">{{
+                        event.category.toUpperCase()
+                      }}</span>
+                      <span ng-if="event.category.toUpperCase()=='PREMIUM'"
+                        >PREMIER</span
+                      >
+                      <br />
+                      &nbsp;&nbsp;&nbsp;<span
+                        >{{
+                          toTitleCase(event.duration).split(" ")[0]
+                        }}
+                        Hours</span
+                      >
+                      <br />
+                      &nbsp;&nbsp;
+                      <span ng-if="event.date!=''">{{ event.date }}</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="gra-fail-message" hidden>
+              <p class="center row" style="color:white;">
+                <br />Will be Updated Soon...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------Event Details----------------------------------------------- -->
+      <div ng-repeat="event in events">
+        <div
+          id="modal-{{ event._id }}"
+          class="iziModal1 {{ event._id }}"
+          data-izimodal-title="{{ event.name }}"
+          data-izimodal-subtitle="{{
+            event.organization.join(',').toUpperCase()
+          }}"
+        >
+          <div class="content"></div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <img src="./img/vit_white.png" alt="vit_logo" class="vit-logo" />
+        <div id="contact">
+          <div class="location">
+            <img src="./img/baseline-location_on-24px.svg" alt="location" />
+            <p>Vellore Institute of Technology Vellore, Tamil Nadu-632014</p>
+          </div>
+          <div class="mail">
+            <img src="./img/baseline-email-24px.svg" alt="email" />
+            <p>organizingteam.gravitas@vit.ac.in</p>
+          </div>
+          <p class="center">
+            Developed with <i class="fab fa-gratipay"></i> by Web & Media
+            Team
+          </p>
+        </div>
+
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fab fa-twitter-square"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- ===============================EVENTS SECTION SCRIPTS================================== -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.cloud9carousel.js"></script>
+    <script src="js/modernizr.min.js"></script>
+
+    <!-- ===================================EVENTS PAGE SCRIPTS===================================== -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="js/eventsController.js"></script>
+    <script src="js/content-filter.js"></script>
+    <script src="js/searchbar.js"></script>
+    <script src="js/iziModal.js"></script>
+    <script>
+      $(document).ready(function() {
+        if (window.innerWidth >= 993) {
+          $(".event_cards").css("height", 70 + "vh");
+          $(".event_cards").css("overflow-y", "scroll");
+        }
+      });
+    </script>
+  </body>
+</html>

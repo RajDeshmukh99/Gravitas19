@@ -1,0 +1,117 @@
+/* -----FOOTER---------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+	#footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#footer p {
+		order: 2;
+	}
+
+	.socials {
+		order: 1;
+		margin-bottom: 2em;
+	}
+
+	.heading-container h2 {
+		font-size: 2.6em;
+		margin: 2.2em 0 12% 0;
+		border-left: 5px solid #0cd1eb;
+	}
+	#tdt {
+		font-size: 16px !important;
+	}
+	.info {
+		top: 40%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#vit-landing-logo {
+		/* display: block;
+		margin: 1% auto; */
+		position: absolute;
+		top: 60px;
+		/* left: 50%; */
+		left: calc(50% - 50px);
+		/* right: 32px; */
+		width: 100px;
+		/*  */
+		/*  */
+		display: none;
+	}
+
+	.powered-by {
+		/* left: calc(50% - 200px); */
+		width: 100%;
+		left: auto;
+		right: auto;
+		/* left: calc(50% - 200px); */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.powered-by p {
+		margin-left: 0;
+	}
+
+	#pb2 {
+		margin-left: 16px;
+	}
+	.powered-by .pb-container img {
+		margin: 0;
+		height: 32px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header {
+		min-height: 275px;
+	}
+	.heading-container {
+		top: 20%;
+	}
+	.heading-container h2 {
+		font-size: 1.8rem;
+		margin: 4.5rem 0 12% 0;
+	}
+	#team-header h2 {
+		font-size: 2.4em;
+		margin: 2.2em 0 12% 0;
+		border-left: 5px solid #0cd1eb;
+	}
+	.back-arrow {
+		height: 12px;
+	}
+	.back-btn {
+		font-size: 15px;
+	}
+	/* .powered-by {
+		width: 100;
+		left: auto;
+		right: auto;
+	} */
+	#tdt {
+		font-size: 16px !important;
+	}
+	#landing-logo {
+		width: 70%;
+	}
+}
+
+/* -.-.-.-.-.-.-.-.- */
+
+@media only screen and (min-width: 300px) and (max-width: 820px) and (orientation: landscape) {
+	#tdt {
+		display: none;
+		/* font-size: 12px !important; */
+	}
+	#landing-logo {
+		width: 50%;
+		margin-bottom: 0;
+	}
+}
